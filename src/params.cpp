@@ -35,7 +35,7 @@ testconfig readParameters(char* filename){
     m.dimZ = getParamFromConfigFileWDefault_int("parameters.dimensionZ",0);// domain dimension Z, int, not used
     m.srcLocX = getParamFromConfigFileWDefault_int("parameters.sourceLocationX",0);//source location X, int
     m.srcLocY = getParamFromConfigFileWDefault_int("parameters.sourceLocationY", 0);//source location Y, int
-    m.PECScattFlag = getParamFromConfigFileWDefault_int("parameters.PECScattFlag", 0);//PEC Scattering Flag; 0: without PEC cylinder; 1: with PEC cylinder, int
+    m.PECScattFlag = getParamFromConfigFileWDefault_int("parameters.PECScattFlag", 0);//PEC scattering flag; 0: without PEC cylinder; 1: with PEC cylinder, int
     m.PECScattLocX = getParamFromConfigFileWDefault_int("parameters.PECScattLocationX", 0);//PEC cylinder location X, int
     m.PECScattLocY = getParamFromConfigFileWDefault_int("parameters.PECScattLocationY", 0);//PEC cylinder location Y, int
     m.PECScattDimX = getParamFromConfigFileWDefault_int("parameters.PECScattDimensionX", 0);//PEC cylinder dimension X, int
