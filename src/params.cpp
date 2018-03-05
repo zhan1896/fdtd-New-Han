@@ -22,35 +22,37 @@ testconfig readParameters(char* filename){
     printf("configFilename = %s \n",configFilename);
     // load the entire config file into memory
     parseConfigFile(configFilename); //in config.c  analyze config file, check if status is good
-    if (FILE *file = fopen(configFilename, "r")){
+    if (FILE *file = fopen(configFilename, "r")){ // check if the config file exists
         fclose(file);}
     else
     { printf("config file not exist");}
     
     testconfig m;
+    /*get parameters from the config file*/
+    m.timelength = getParamFromConfigFileWDefault_int("parameters.timelength",0); // simulation time length, int
+    m.dimX = getParamFromConfigFileWDefault_int("parameters.dimensionX",0); // domain dimension X, int
+    m.dimY = getParamFromConfigFileWDefault_int("parameters.dimensionY",0);// domain dimension Y, int
+    m.dimZ = getParamFromConfigFileWDefault_int("parameters.dimensionZ",0);// domain dimension Z, int, not used
+    m.srcLocX = getParamFromConfigFileWDefault_int("parameters.sourceLocationX",0);//source location X, int
+    m.srcLocY = getParamFromConfigFileWDefault_int("parameters.sourceLocationY", 0);//source location Y, int
+    m.PECScattFlag = getParamFromConfigFileWDefault_int("parameters.PECScattFlag", 0);//PEC Scattering Flag; 0: without PEC cylinder; 1: with PEC cylinder, int
+    m.PECScattLocX = getParamFromConfigFileWDefault_int("parameters.PECScattLocationX", 0);//PEC cylinder location X, int
+    m.PECScattLocY = getParamFromConfigFileWDefault_int("parameters.PECScattLocationY", 0);//PEC cylinder location Y, int
+    m.PECScattDimX = getParamFromConfigFileWDefault_int("parameters.PECScattDimensionX", 0);//PEC cylinder dimension X, int
+    m.PECScattDimY = getParamFromConfigFileWDefault_int("parameters.PECScattDimensionY", 0);//PEC cylinder dimension Y, int
+    m.Wavelength = getParamFromConfigFileWDefault_double("parameters.Wacelength", 0);//EM wavelength, double
+    m.PMLthickness = getParamFromConfigFileWDefault_int("parameters.PMLthickness", 0);//PML thickness, double
+    m.dx = getParamFromConfigFileWDefault_double("parameters.dx", 0);//step size in length, double
+    m.dt = getParamFromConfigFileWDefault_double("parameters.dt", 0);//step size in time, double
+    m.k_x_max = getParamFromConfigFileWDefault_double("parameters.k_x_max", 0);//double
+    m.k_y_max = getParamFromConfigFileWDefault_double("parameters.k_y_max", 0);//double
+    m.a_x_max = getParamFromConfigFileWDefault_double("parameters.a_x_max", 0);//double
+    m.a_y_max = getParamFromConfigFileWDefault_double("parameters.a_y_max", 0);//double
+    m.m_a = getParamFromConfigFileWDefault_double("parameters.m_a", 0);//double
+    m.m_chi = getParamFromConfigFileWDefault_double("parameters.m_chi", 0);//double
     
-    m.timelength = getParamFromConfigFileWDefault_int("parameters.timelength",0);
-    m.dimX = getParamFromConfigFileWDefault_int("parameters.dimensionX",0);
-    m.dimY = getParamFromConfigFileWDefault_int("parameters.dimensionY",0);
-    m.dimZ = getParamFromConfigFileWDefault_int("parameters.dimensionZ",0);
-    m.srcLocX = getParamFromConfigFileWDefault_int("parameters.sourceLocationX",0);
-    m.srcLocY = getParamFromConfigFileWDefault_int("parameters.sourceLocationY", 0);
-    m.PECScattFlag = getParamFromConfigFileWDefault_int("parameters.PECScattFlag", 0);
-    m.PECScattLocX = getParamFromConfigFileWDefault_int("parameters.PECScattLocationX", 0);
-    m.PECScattLocY = getParamFromConfigFileWDefault_int("parameters.PECScattLocationY", 0);
-    m.PECScattDimX = getParamFromConfigFileWDefault_int("parameters.PECScattDimensionX", 0);
-    m.PECScattDimY = getParamFromConfigFileWDefault_int("parameters.PECScattDimensionY", 0);
-    m.Wavelength = getParamFromConfigFileWDefault_double("parameters.Wacelength", 0);
-    m.PMLthickness = getParamFromConfigFileWDefault_int("parameters.PMLthickness", 0);
-    m.dx = getParamFromConfigFileWDefault_double("parameters.dx", 0);
-    m.dt = getParamFromConfigFileWDefault_double("parameters.dt", 0);
-    m.k_x_max = getParamFromConfigFileWDefault_double("parameters.k_x_max", 0);
-    m.k_y_max = getParamFromConfigFileWDefault_double("parameters.k_y_max", 0);
-    m.a_x_max = getParamFromConfigFileWDefault_double("parameters.a_x_max", 0);
-    m.a_y_max = getParamFromConfigFileWDefault_double("parameters.a_y_max", 0);
-    m.m_a = getParamFromConfigFileWDefault_double("parameters.m_a", 0);
-    m.m_chi = getParamFromConfigFileWDefault_double("parameters.m_chi", 0);
     
+    /*print the obtained parameters to check*/
     printf("dimX = %d \n", m.dimX);
     printf("dimY = %d \n", m.dimY);
     printf("srcLocX = %d \n", m.srcLocX);

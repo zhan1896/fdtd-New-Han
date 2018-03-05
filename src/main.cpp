@@ -16,7 +16,7 @@ using namespace std;
 int main(int argv, char** args) {
     
     testconfig m;
-    m = readParameters(args[1]);
+    m = readParameters(args[1]); // read parameters from the configuration file
         
     double dx = 0.01;
     double dt = 1.0 / sqrt(2.0) * dx / 3.0e8;
