@@ -285,6 +285,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/fdtd.dir/build.make CMakeFiles/fdtd.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/params.o: src/params.cpp.o
+
+.PHONY : src/params.o
+
+# target to build an object file
+src/params.cpp.o:
+	$(MAKE) -f CMakeFiles/fdtd.dir/build.make CMakeFiles/fdtd.dir/src/params.cpp.o
+.PHONY : src/params.cpp.o
+
+src/params.i: src/params.cpp.i
+
+.PHONY : src/params.i
+
+# target to preprocess a source file
+src/params.cpp.i:
+	$(MAKE) -f CMakeFiles/fdtd.dir/build.make CMakeFiles/fdtd.dir/src/params.cpp.i
+.PHONY : src/params.cpp.i
+
+src/params.s: src/params.cpp.s
+
+.PHONY : src/params.s
+
+# target to generate assembly for a file
+src/params.cpp.s:
+	$(MAKE) -f CMakeFiles/fdtd.dir/build.make CMakeFiles/fdtd.dir/src/params.cpp.s
+.PHONY : src/params.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -312,6 +339,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/params.o"
+	@echo "... src/params.i"
+	@echo "... src/params.s"
 .PHONY : help
 
 

@@ -96,9 +96,22 @@ CMakeFiles/fdtd.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fdtd.dir/src/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanz/Downloads/fdtd-New/src/main.cpp -o CMakeFiles/fdtd.dir/src/main.cpp.s
 
+CMakeFiles/fdtd.dir/src/params.cpp.o: CMakeFiles/fdtd.dir/flags.make
+CMakeFiles/fdtd.dir/src/params.cpp.o: src/params.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hanz/Downloads/fdtd-New/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fdtd.dir/src/params.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fdtd.dir/src/params.cpp.o -c /Users/hanz/Downloads/fdtd-New/src/params.cpp
+
+CMakeFiles/fdtd.dir/src/params.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fdtd.dir/src/params.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hanz/Downloads/fdtd-New/src/params.cpp > CMakeFiles/fdtd.dir/src/params.cpp.i
+
+CMakeFiles/fdtd.dir/src/params.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fdtd.dir/src/params.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hanz/Downloads/fdtd-New/src/params.cpp -o CMakeFiles/fdtd.dir/src/params.cpp.s
+
 CMakeFiles/fdtd.dir/extern/config.cpp.o: CMakeFiles/fdtd.dir/flags.make
 CMakeFiles/fdtd.dir/extern/config.cpp.o: extern/config.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hanz/Downloads/fdtd-New/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fdtd.dir/extern/config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hanz/Downloads/fdtd-New/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/fdtd.dir/extern/config.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fdtd.dir/extern/config.cpp.o -c /Users/hanz/Downloads/fdtd-New/extern/config.cpp
 
 CMakeFiles/fdtd.dir/extern/config.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/fdtd.dir/extern/config.cpp.s: cmake_force
 
 CMakeFiles/fdtd.dir/extern/config_map.cpp.o: CMakeFiles/fdtd.dir/flags.make
 CMakeFiles/fdtd.dir/extern/config_map.cpp.o: extern/config_map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hanz/Downloads/fdtd-New/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/fdtd.dir/extern/config_map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hanz/Downloads/fdtd-New/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/fdtd.dir/extern/config_map.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fdtd.dir/extern/config_map.cpp.o -c /Users/hanz/Downloads/fdtd-New/extern/config_map.cpp
 
 CMakeFiles/fdtd.dir/extern/config_map.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/fdtd.dir/extern/config_map.cpp.s: cmake_force
 
 CMakeFiles/fdtd.dir/extern/lcfg_static.cpp.o: CMakeFiles/fdtd.dir/flags.make
 CMakeFiles/fdtd.dir/extern/lcfg_static.cpp.o: extern/lcfg_static.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hanz/Downloads/fdtd-New/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/fdtd.dir/extern/lcfg_static.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hanz/Downloads/fdtd-New/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/fdtd.dir/extern/lcfg_static.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fdtd.dir/extern/lcfg_static.cpp.o -c /Users/hanz/Downloads/fdtd-New/extern/lcfg_static.cpp
 
 CMakeFiles/fdtd.dir/extern/lcfg_static.cpp.i: cmake_force
@@ -140,6 +153,7 @@ fdtd_OBJECTS = \
 "CMakeFiles/fdtd.dir/src/chunk.cpp.o" \
 "CMakeFiles/fdtd.dir/src/grid.cpp.o" \
 "CMakeFiles/fdtd.dir/src/main.cpp.o" \
+"CMakeFiles/fdtd.dir/src/params.cpp.o" \
 "CMakeFiles/fdtd.dir/extern/config.cpp.o" \
 "CMakeFiles/fdtd.dir/extern/config_map.cpp.o" \
 "CMakeFiles/fdtd.dir/extern/lcfg_static.cpp.o"
@@ -150,12 +164,13 @@ fdtd_EXTERNAL_OBJECTS =
 fdtd: CMakeFiles/fdtd.dir/src/chunk.cpp.o
 fdtd: CMakeFiles/fdtd.dir/src/grid.cpp.o
 fdtd: CMakeFiles/fdtd.dir/src/main.cpp.o
+fdtd: CMakeFiles/fdtd.dir/src/params.cpp.o
 fdtd: CMakeFiles/fdtd.dir/extern/config.cpp.o
 fdtd: CMakeFiles/fdtd.dir/extern/config_map.cpp.o
 fdtd: CMakeFiles/fdtd.dir/extern/lcfg_static.cpp.o
 fdtd: CMakeFiles/fdtd.dir/build.make
 fdtd: CMakeFiles/fdtd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hanz/Downloads/fdtd-New/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable fdtd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hanz/Downloads/fdtd-New/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable fdtd"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fdtd.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

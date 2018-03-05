@@ -91,6 +91,22 @@ lcfg_static.h
 /Users/hanz/Downloads/fdtd-New/src/lcfg_static.h
 config.h
 /Users/hanz/Downloads/fdtd-New/src/config.h
+params.hpp
+/Users/hanz/Downloads/fdtd-New/src/params.hpp
+
+/Users/hanz/Downloads/fdtd-New/src/params.cpp
+stdio.h
+-
+cmath
+-
+params.hpp
+/Users/hanz/Downloads/fdtd-New/src/params.hpp
+lcfg_static.h
+/Users/hanz/Downloads/fdtd-New/src/lcfg_static.h
+config.h
+/Users/hanz/Downloads/fdtd-New/src/config.h
+grid.hpp
+/Users/hanz/Downloads/fdtd-New/src/grid.hpp
 
 extern/config.h
 
@@ -109,6 +125,10 @@ utility
 -
 utils.hpp
 header/utils.hpp
+
+header/params.hpp
+grid.hpp
+header/grid.hpp
 
 header/utils.hpp
 vector

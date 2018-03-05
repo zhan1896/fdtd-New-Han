@@ -24,4 +24,12 @@ CMakeFiles/fdtd.dir/src/main.cpp.o
  extern/config.h
  extern/lcfg_static.h
  header/grid.hpp
+ header/params.hpp
+ header/utils.hpp
+CMakeFiles/fdtd.dir/src/params.cpp.o
+ /Users/hanz/Downloads/fdtd-New/src/params.cpp
+ extern/config.h
+ extern/lcfg_static.h
+ header/grid.hpp
+ header/params.hpp
  header/utils.hpp

@@ -23,5 +23,13 @@ CMakeFiles/fdtd.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/fdtd.dir/src/main.cpp.o: extern/config.h
 CMakeFiles/fdtd.dir/src/main.cpp.o: extern/lcfg_static.h
 CMakeFiles/fdtd.dir/src/main.cpp.o: header/grid.hpp
+CMakeFiles/fdtd.dir/src/main.cpp.o: header/params.hpp
 CMakeFiles/fdtd.dir/src/main.cpp.o: header/utils.hpp
+
+CMakeFiles/fdtd.dir/src/params.cpp.o: src/params.cpp
+CMakeFiles/fdtd.dir/src/params.cpp.o: extern/config.h
+CMakeFiles/fdtd.dir/src/params.cpp.o: extern/lcfg_static.h
+CMakeFiles/fdtd.dir/src/params.cpp.o: header/grid.hpp
+CMakeFiles/fdtd.dir/src/params.cpp.o: header/params.hpp
+CMakeFiles/fdtd.dir/src/params.cpp.o: header/utils.hpp
 

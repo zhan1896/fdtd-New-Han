@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/hanz/Downloads/fdtd-New/src/chunk.cpp" "/Users/hanz/Downloads/fdtd-New/CMakeFiles/fdtd.dir/src/chunk.cpp.o"
   "/Users/hanz/Downloads/fdtd-New/src/grid.cpp" "/Users/hanz/Downloads/fdtd-New/CMakeFiles/fdtd.dir/src/grid.cpp.o"
   "/Users/hanz/Downloads/fdtd-New/src/main.cpp" "/Users/hanz/Downloads/fdtd-New/CMakeFiles/fdtd.dir/src/main.cpp.o"
+  "/Users/hanz/Downloads/fdtd-New/src/params.cpp" "/Users/hanz/Downloads/fdtd-New/CMakeFiles/fdtd.dir/src/params.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
